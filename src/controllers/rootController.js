@@ -1,5 +1,5 @@
 function getRoot(req, res) {
-	res.send("Hello world");
+	res.render("index", {message: "Hola caracola!"});
 }
 
 module.exports = { getRoot };
