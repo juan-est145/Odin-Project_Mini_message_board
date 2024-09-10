@@ -1,5 +1,6 @@
 function getAboutPage(req, res) {
-	res.send("This is my about page");
+	let path = String(req.originalUrl).slice(1);
+	res.render("about", {route: path});
 }
 
 module.exports = { getAboutPage };
