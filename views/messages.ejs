@@ -1,0 +1,9 @@
+<ul>
+	<% for (let i = 0; i < messages.length; i++) { %>
+		<li>
+			<h1><%= messages[i].user %></h1>
+			<p><%= messages[i].text %></p>
+			<span><%= messages[i].added %></span>
+		</li>
+	<% } %>
+</ul>

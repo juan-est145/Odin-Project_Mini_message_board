@@ -4,7 +4,7 @@ const indexRouter = Router();
 const messages = [
 	{
 		text: "Hi there!",
-		user: "Amando",
+		user: "Armando",
 		added: new Date()
 	},
 	{
@@ -14,8 +14,8 @@ const messages = [
 	}
 ];
 
-indexRouter.get("/",(req, res) => {
-	res.send("Estás en root");
+indexRouter.get("/", (req, res) => {
+	res.render("index", { messages: messages });
 });
 
 module.exports = indexRouter;
