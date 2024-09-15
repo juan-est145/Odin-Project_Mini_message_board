@@ -14,10 +14,26 @@ body {
 	padding: 0.5em;
 	gap: 20px;
 	background-color: azure;
+	box-shadow: .5px .5px 20px #d0d0d098;
+	position: sticky;
+	top: 0;
 }
 
 .indexHeader>h1 {
 	flex-grow: 1;
+}
+
+.indexHeader button {
+	background-color: cornflowerblue;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 1.4em;
+	padding: 0.8em;
+	cursor: pointer;
+}
+
+.indexHeader button:hover {
+	background-color: rgb(60, 87, 137);
 }
 
 main {
@@ -28,5 +44,6 @@ main {
 
 li {
 	list-style: none;
-	background-color: rgb(197, 195, 192);
+	background-color: rgb(242, 238, 233);
+	box-shadow: .5px .5px 20px #d0d0d098;
 }
