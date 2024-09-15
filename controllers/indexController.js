@@ -8,7 +8,7 @@ function renderMsg(req, res) {
 	const index = parseInt(req.params.id);
 	if (!Number.isInteger(index) || index < 0 || index >= messages.length) {
 		res.status(404).send("404: Message not found");
-		return ;
+		return;
 	}
 	res.render("viewMsg", {
 		index: index,
