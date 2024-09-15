@@ -1,5 +1,8 @@
-<%- include("headTag", {title: "Message board", styles: ""}) %>
+<%- include("headTag", {title: "Message board", styles: "styles"}) %>
 <body>
-	<%- include("messages", { messages: messages }) %>
+	<%- include("header") %>
+	<main>
+		<%- include("messages", { messages: messages }) %>
+	</main>
 </body>
 </html>
