@@ -6,6 +6,11 @@
 	<title>Message board</title>
 </head>
 <body>
-	<h1>Probando que esto va</h1>
+	<form method="post" action="/new">
+		<h1>Introduce your message</h1>
+		<%- include("inputs", {label: "name", placeholder: "Name", type: "text", required: true}) %>
+		<%- include("inputs", {label: "msg", placeholder: "Message", type: "text", required: true}) %>
+		<button type="submit">Send message</button>
+	</form>
 </body>
 </html>
