@@ -1,9 +1,16 @@
 <ul class="messageContainer">
 	<% for (let i = messages.length - 1; i >= 0; i--) { %>
-		<li class="message">
+		<li class="message" data-id=<%= i %> onclick="goToMsg(<%= i %>)">
 			<h1><%= messages[i].user %></h1>
 			<p><%= messages[i].text %></p>
 			<span><%= messages[i].added %></span>
 		</li>
 	<% } %>
 </ul>
+
+
+<script>
+    function goToMsg(id) {
+        window.location.href = `/message/${id}`;
+    }
+</script>

@@ -1,0 +1,16 @@
+<%- include("headTag", {title: "Message board", styles: "../index"}) %>
+<header class="indexHeader">
+	<h1>Message Details</h1>
+	<a href="/">
+		<button class="btn">Go back</button>
+	</a>
+</header>
+<main>
+	<ul class="messageContainer">
+		<li class="message" data-id=<%= index %>>
+			<h1><%= user %></h1>
+			<p><%= text %></p>
+			<span><%= added %></span>
+		</li>
+	</ul>
+</main>

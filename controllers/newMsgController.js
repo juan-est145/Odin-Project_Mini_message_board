@@ -7,7 +7,7 @@ function formRender(req, res) {
 function postMsg(req, res) {
 	const name = req.body.name;
 	const msg = req.body.msg;
-	messages.push({text: msg, user: name, added: new Date()})
+	messages.push({text: msg, user: name, added: new Date(), id: messages.length});
 	res.redirect("/");
 }
 
