@@ -42,8 +42,36 @@ main {
 	flex-grow: 1;
 }
 
-li {
+.messageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.message {
 	list-style: none;
+	padding: 2em;
+	width: 50%;
 	background-color: rgb(242, 238, 233);
 	box-shadow: .5px .5px 20px #d0d0d098;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.message>h1 {
+	font-size: 1.3rem;
+	color: cornflowerblue;
+	margin: 0;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.message>p {
+	font-size: 1.3rem;
+	margin: 10px;
+}
+
+.message>span {
+	font-size: 0.9rem;
 }
